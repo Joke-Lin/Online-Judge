@@ -9,37 +9,32 @@ using namespace std;
 
 class Solution {
 public:
-    bool isNeedChar(char c){ 
-        if(c == '.' || c == '*' ) return true;
-        else return false;
-    }
     bool isMatch(string s, string p) {
-        int i = 0,j = 0;
-        int len_s = s.length(),len_p = p.length();
-        char c = p[0];
-        while(i < len_s && j < len_p)
+        if(s.length() >= 1 && p.length() < 1) return false;
+        else return match(s,0,p,0);
+    }
+    //s为空p不为空不一定不能匹配
+    bool match(const string& s,int i,const string& p,int j) {
+        cout << "**" << i << "***" << j << endl;
+        if(i >= s.length() && j >= p.length()) return true;
+        if(i < s.length() && j >= p.length()) return false;
+        //下一个不是*号
+        if((j+1 < p.length() && p[j+1] != '*') || j+1 == p.length())
         {
-            // if(!isNeedChar(p[j]) && c != s[i]){
-            //     if(j == len_p-1) break;
-            //     else if(p[j+1] == '*') j++;
-            //     else break;
-            // }
-            // else{
-                
-            // }
-            while(c == s[i] && i < len_s && j < len_p)
-            {
-                i++,j++;
-                c = p[j];
-            }
-            if(c == '*')
-            {
-
-            }
-            
+            cout << "&&&" << i << "&&&" << j << endl;
+            if(i < s.length() && (s[i]==p[j] || p[j]=='.')) return match(s,i+1,p,j+1);
+            else return false;
         }
-        if(i != len_s || j != len_p) return false;
-        else return true;
+        else{
+            //下一个是*号
+            //不匹配的情况 以及 类似abb ab*这样的s已经达到最后一个
+            if((i < s.length() && s[i]!=p[j] && p[j] != '.')||(i == s.length())) {
+                cout << i << " " << j << endl;
+                return match(s,i,p,j+2);
+            }
+            //匹配一个 0个多个
+            else return match(s,i,p,j+2) || match(s,i+1,p,j) || match(s,i+1,p,j+2);
+        }
     }
 };
 
