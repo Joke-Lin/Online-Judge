@@ -25,32 +25,25 @@ class Solution
   public:
     ListNode *mergeTwoLists(ListNode *l1, ListNode *l2)
     {
-        if(l1 == NULL && l2 == NULL) return NULL;
-        ListNode *temp = new ListNode(0);
-        ListNode *head = temp;
-        bool flag = true;
+        ListNode *res = NULL;
+        ListNode *head = NULL;
         while(true)
         {
-            if(l1 == NULL && l2 == NULL) break;
-            if((l1 == NULL && l2 != NULL) || (l1!= NULL && l2 != NULL && l1->val > l2->val))
-            {
-                if(!flag) {
-                    ListNode *mid = new ListNode(l2->val);
-                    temp->next = mid;
-                    temp = mid;
-                } else temp->val = l2->val;
-                l2 = l2->next;
+            int pos = 0; // 取l1 还是 l2
+            int small = 0x3f3f3f3f;
+            if(l1 != NULL && l1->val < small) small = l1->val, pos = 1;
+            if(l2 != NULL && l2->val < small) small = l2->val, pos = 2;
+            if(pos == 0) break;
+            else  {
+                if(res == NULL) res = new ListNode(small), head = res;
+                else {
+                    ListNode *temp = new ListNode(small);
+                    res->next = temp;
+                    res = res->next;
+                }
+                if(pos == 1) l1 = l1->next;
+                else l2 = l2->next;
             }
-            else if((l1 != NULL && l2 == NULL) || (l1!= NULL && l2 != NULL && l1->val <= l2->val))
-            {
-                if(!flag) {
-                    ListNode *mid = new ListNode(l1->val);
-                    temp->next = mid;
-                    temp = mid;
-                } else temp->val = l1->val;
-                l1 = l1->next;
-            }
-            flag = false;
         }
         return head;
     }
