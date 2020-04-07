@@ -14,23 +14,27 @@ const int maxn = 31;
 int postorder[maxn];
 int inorder[maxn];
 
+// 声明节点
 struct Node {
     int val;
     Node *left = NULL, *right = NULL;
 };
 
+// 返回一棵树 根据根节点的值（这里提供postorder的下标），以及inorder的左右边界
 Node* getTree(int post_i, int l, int r) {
     if(l > r) {
         return NULL;
     }
     Node *t_root = new Node();
     int mid = -1;
+    // 分开左右子树
     for(int i = l;i <= r;i++) {
         if(inorder[i] == postorder[post_i]) {
             mid = i;
         }
     }
     t_root->val = inorder[mid];
+    // 递归左右子数
     t_root->right = getTree(post_i-1, mid+1, r);
     t_root->left = getTree(post_i - (r - mid) - 1, l, mid-1);
     return t_root;
