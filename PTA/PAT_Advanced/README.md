@@ -37,3 +37,11 @@
 11. 1024 Palindromic Number（大整数相加）
 
 	字符串相加，注意一开始不要用int读入，会溢出。。。
+
+12. [1026 Table Tennis（模拟）](https://joke-lin.top/2020/04/09/2020-04-09-PAT-Advanced-1026/)
+
+	最后测试点坑点：在检查是否有VIP在排队的时候，忽略了此VIP用户可能在之前以及被处理（VIP有时候可以优先）
+
+13. 1028 List Sorting（排序）
+
+	**注意不要使用`std::cout`可能会超时。。。**
