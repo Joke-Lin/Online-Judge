@@ -45,3 +45,21 @@
 13. 1028 List Sorting（排序）
 
 	**注意不要使用`std::cout`可能会超时。。。**
+
+14. 1031 Hello World for U（打印）
+
+	题目看清满足尽可能方块的同时需要满足 n2 > n1
+
+15. [1032 Sharing（链表）](https://joke-lin.top/2020/04/11/2020-04-11-PAT-Advanced-1032/)
+
+	注意特殊情况，考虑问题要全面，路径不以-1结尾也是存在
+
+16. [1033 To Fill or Not to Fill （贪心）](https://joke-lin.top/2020/04/11/2020-04-11-PAT-Advanced-1033/)
+
+17. 1034 Head of a Gang（DFS，图的遍历）
+
+	注意输入。。。
+
+18. 1035 Password（字符串）
+
+	注意输出，单复数，题目看清。。
