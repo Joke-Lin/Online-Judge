@@ -63,3 +63,7 @@
 18. 1035 Password（字符串）
 
 	注意输出，单复数，题目看清。。
+
+19. [1038 Recover the Smallest Number（可能算贪心）](https://joke-lin.top/2020/04/16/2020-04-16-PAT-Advanced-1038/)
+
+20. [1040 Longest Symmetric String（动态规划）](https://joke-lin.top/2020/04/16/2020-04-16-PAT-Advanced-1040/)
