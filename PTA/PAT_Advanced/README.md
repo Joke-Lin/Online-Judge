@@ -77,3 +77,5 @@
 24. 1047 Student List for Course
 
 	使用set（TE）没有使用vector然后最后排序快。。这种题目最好不要用string，和cin，cout容易卡时间。。
+
+25. 1048 Find Coins（二分）
