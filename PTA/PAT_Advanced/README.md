@@ -67,3 +67,13 @@
 19. [1038 Recover the Smallest Number（可能算贪心）](https://joke-lin.top/2020/04/16/2020-04-16-PAT-Advanced-1038/)
 
 20. [1040 Longest Symmetric String（动态规划）](https://joke-lin.top/2020/04/16/2020-04-16-PAT-Advanced-1040/)
+
+21. [1043 Is It a Binary Search Tree（树）](https://joke-lin.top/2020/04/21/2020-04-21-PAT-Advanced-1043/)
+
+22. [1044 Shopping in Mars（二分）](https://joke-lin.top/2020/04/21/2020-04-25-PAT-Advanced-1044/)
+
+23. [1045 Favorite Color Stripe（动态规划）](https://joke-lin.top/2020/04/21/2020-04-27-PAT-Advanced-1045/)
+
+24. 1047 Student List for Course
+
+	使用set（TE）没有使用vector然后最后排序快。。这种题目最好不要用string，和cin，cout容易卡时间。。
