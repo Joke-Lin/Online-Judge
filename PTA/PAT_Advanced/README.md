@@ -79,3 +79,5 @@
 	使用set（TE）没有使用vector然后最后排序快。。这种题目最好不要用string，和cin，cout容易卡时间。。
 
 25. 1048 Find Coins（二分）
+
+26. [1049 Counting Ones（动态规划）](https://pintia.cn/problem-sets/994805342720868352/problems/994805430595731456)
