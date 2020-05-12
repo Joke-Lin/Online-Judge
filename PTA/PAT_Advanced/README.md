@@ -81,3 +81,9 @@
 25. 1048 Find Coins（二分）
 
 26. [1049 Counting Ones（动态规划）](https://pintia.cn/problem-sets/994805342720868352/problems/994805430595731456)
+
+27. [1051 Pop Sequence（栈）](https://joke-lin.top/2020/05/06/2020-05-06-PAT-Advanced-1051/)
+
+28. [1052 Linked List Sorting（排序）](https://joke-lin.top/2020/05/11/2020-05-11-PAT-Advanced-1052/)
+
+	使用MAP超时、注意无效地址的情况
