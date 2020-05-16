@@ -91,3 +91,7 @@
 29. 1056 Mice and Rice
 
 	注意sort最好就用一次。。。（之前错误：先将在符合年龄之内的找出然后在排序，会有很多多余的）
+
+21. [1057 Stack（树状数组）](https://joke-lin.top/2020/05/14/2020-05-14-PAT-Advanced-1057/)
+
+22. [1059 Prime Factors（素数）](https://joke-lin.top/2020/05/16/2020-05-16-PAT-Advanced-1059/)
