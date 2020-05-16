@@ -87,3 +87,7 @@
 28. [1052 Linked List Sorting（排序）](https://joke-lin.top/2020/05/11/2020-05-11-PAT-Advanced-1052/)
 
 	使用MAP超时、注意无效地址的情况
+
+29. 1056 Mice and Rice
+
+	注意sort最好就用一次。。。（之前错误：先将在符合年龄之内的找出然后在排序，会有很多多余的）
