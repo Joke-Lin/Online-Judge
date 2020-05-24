@@ -95,3 +95,11 @@
 21. [1057 Stack（树状数组）](https://joke-lin.top/2020/05/14/2020-05-14-PAT-Advanced-1057/)
 
 22. [1059 Prime Factors（素数）](https://joke-lin.top/2020/05/16/2020-05-16-PAT-Advanced-1059/)
+
+23. [1060 Are They Equal（模拟）](https://joke-lin.top/2020/05/23/2020-05-23-PAT-Advanced-1060/)
+
+	注意前导0的情况以及输入0的情况
+
+24. 1061 Dating （字符串）
+
+	**千万不要相信题目，太坑了**，注意每一项的数据范围，不是只要满足大写就可以的，还有范围约束
