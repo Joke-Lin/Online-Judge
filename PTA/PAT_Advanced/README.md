@@ -103,3 +103,11 @@
 24. 1061 Dating （字符串）
 
 	**千万不要相信题目，太坑了**，注意每一项的数据范围，不是只要满足大写就可以的，还有范围约束
+
+25. 1062 Talent and Virtue（重载排序）
+
+	注意输出隐藏的顺序
+
+26. 1063 Set Similarity（交并集）
+
+	注意C++ set_union set_intersection的使用（注意直接最后一个会超时，我是保存了之前询问过的对过的。。。），或者不用这个用https://www.liuchuo.net/archives/2106
